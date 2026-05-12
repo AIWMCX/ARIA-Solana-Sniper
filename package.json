@@ -1,0 +1,33 @@
+{
+  "name": "aria-telegram-terminal",
+  "version": "1.0.0",
+  "description": "ARIA Sniper Terminal — Telegram Mini App with lead capture",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.32.0",
+    "hono": "^4.6.12",
+    "pino": "^9.5.0",
+    "pino-pretty": "^11.3.0",
+    "resend": "^4.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
